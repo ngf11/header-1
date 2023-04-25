@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2e/Pieter_Aertsen_005.jpg);
+  /* opacity: 0.5; */
+  height: 100%;
+}
+h1 {
+  opacity: 1;
+  font-size: 20rem;
+  color: white;
+}
+cntainer-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+h1::after {
+  content: ".";
+  color: red;
+  font-size: 20rem;
+  opacity: 1;
+}
