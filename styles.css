@@ -2,27 +2,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  min-height: 100%;
+}
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
-
-header {
+main {
   display: flex;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2e/Pieter_Aertsen_005.jpg);
-  /* opacity: 0.5; */
+  flex-direction: row;
+}
+
+.head {
+  display: flex;
+  background-color: grey;
+  background-image: url(./img/butcher.jpeg);
+  background-position: bottom center;
+  background-blend-mode: multiply;
+  background-size: cover;
+
   height: 100%;
 }
 h1 {
   opacity: 1;
-  font-size: 20rem;
-  color: white;
+  font-size: 10rem;
+  color: rgba(255, 255, 255, 0.638);
 }
 cntainer-1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 h1::after {
@@ -30,4 +43,9 @@ h1::after {
   color: red;
   font-size: 20rem;
   opacity: 1;
+}
+
+footer {
+  font-size: 2rem;
+  margin-top: auto;
 }
